@@ -1,0 +1,87 @@
+@mixin sp-screen {
+    @media screen and (max-width: 767px) {
+        @content;
+    } 
+}
+
+.article{
+    h2{
+        font-weight: bold;
+        text-align: center;
+        font-size: 30px;
+        margin: 50px 0;
+    }
+}
+
+.article_contents{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 1152px;
+    @include sp-screen{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    div{
+        width: 30%;
+        height: 500px;
+        display: inline-block;
+        // cursor: pointer;
+        transition: all 0.3s ease 0s;
+        margin-bottom: 70px;
+        position: relative;
+        @include sp-screen{
+            width: 70%;
+            height: 550px;
+        }
+    }
+
+    div:hover {
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
+        transform: translateY(-0.1875em);
+    }
+
+
+    a {
+        color: black;
+        position: absolute; /*アンダーラインの位置を決めるための基準 */
+        bottom: 10%;
+        right: 5%;
+        text-decoration: none;
+    }
+        
+    a::after {
+        position: absolute;
+        bottom: -100%;
+        right: 0;
+        content: '';
+        width: 20%;
+        height: 3.5px;
+        background: rgb(107, 107, 107);
+        transition: .5s;
+        border-radius: 1em;
+    }
+            
+    a:hover::after {
+        width: 100%;
+    }
+         
+
+}
+
+.article_img img{
+    width: 100%;
+}
+
+.article_date{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.article_title{
+    margin-top: 20px;
+    margin-left: 10px;
+}

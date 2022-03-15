@@ -1,0 +1,115 @@
+@charset "UTF-8";
+.article h2 {
+  font-weight: bold;
+  text-align: center;
+  font-size: 30px;
+  margin: 50px 0;
+}
+
+.article_contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: auto;
+  width: 1152px;
+}
+
+@media screen and (max-width: 767px) {
+  .article_contents {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+}
+
+.article_contents div {
+  width: 30%;
+  height: 500px;
+  display: inline-block;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  margin-bottom: 70px;
+  position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  .article_contents div {
+    width: 70%;
+    height: 550px;
+  }
+}
+
+.article_contents div:hover {
+  -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
+          box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
+  -webkit-transform: translateY(-0.1875em);
+          transform: translateY(-0.1875em);
+}
+
+.article_contents a {
+  color: black;
+  position: absolute;
+  /*アンダーラインの位置を決めるための基準 */
+  bottom: 10%;
+  right: 5%;
+  text-decoration: none;
+}
+
+.article_contents a::after {
+  position: absolute;
+  bottom: -100%;
+  right: 0;
+  content: '';
+  width: 20%;
+  height: 3.5px;
+  background: #6b6b6b;
+  -webkit-transition: .5s;
+  transition: .5s;
+  border-radius: 1em;
+}
+
+.article_contents a:hover::after {
+  width: 100%;
+}
+
+.article_img img {
+  width: 100%;
+}
+
+.article_date {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.article_title {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: black;
+  color: white;
+  height: 60px;
+  font-size: 15px;
+  margin-top: 50px;
+}
+/*# sourceMappingURL=style.css.map */
