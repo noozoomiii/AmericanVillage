@@ -13,3 +13,27 @@
 </head>
 
 <body>
+<header>
+         <!-- ハンバーガーメニュー -->
+         <div class="openbtn1"><span></span><span></span><span></span></div>
+         <nav id="g-nav">
+             <div id="g-nav-list">
+                 <!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
+                 <ul>
+                     <li><img src="<?php echo get_template_directory_uri();?>/assets/img/logo.png" alt=""></li>
+                     <li><a href="#">Menu01</a></li>
+                     <li><a href="#">Menu02</a></li>
+                     <li><a href="#">Menu03</a></li>
+                     <li><a href="#">Menu04</a></li>
+                 </ul>
+             </div>
+         </nav>
+     <!-- ハンバーガーメニュー終わり -->
+
+        <div class="headerFlex">
+            <a href="">Menu01</a>
+            <a href="">Menu02</a>
+            <a href="">Menu03</a>
+            <a href="">Menu04</a>
+        </div>
+    </header>

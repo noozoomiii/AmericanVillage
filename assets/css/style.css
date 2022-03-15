@@ -112,4 +112,266 @@ footer {
   font-size: 15px;
   margin-top: 50px;
 }
+
+body {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+source {
+  max-width: 100%;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 8em;
+  /*アクティブクラスがついたら透過なしにして最前面へ*/
+  /*ナビゲーションの縦スクロール*/
+  /*ナビゲーション*/
+  /*リストのレイアウト設定*/
+  /*========= ボタンのためのCSS ===============*/
+  /*×に変化*/
+}
+
+header #g-nav {
+  /*position:fixed;にし、z-indexの数値を小さくして最背面へ*/
+  position: fixed;
+  z-index: -1;
+  opacity: 0;
+  /*はじめは透過0*/
+  /*ナビの位置と形状*/
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  /*ナビの高さ*/
+  background: snow;
+  /*動き*/
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+header #g-nav.panelactive {
+  opacity: 1;
+  z-index: 999;
+}
+
+header #g-nav.panelactive #g-nav-list {
+  /*ナビの数が増えた場合縦スクロール*/
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100vh;
+  /*表示する高さ*/
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+header #g-nav ul {
+  display: none;
+  /*ナビゲーション天地中央揃え*/
+  position: absolute;
+  z-index: 999;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+header #g-nav.panelactive ul {
+  display: block;
+}
+
+header #g-nav li {
+  list-style: none;
+  text-align: center;
+}
+
+header #g-nav li a {
+  color: #333;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+}
+
+header .openbtn1 {
+  position: fixed;
+  z-index: 9999;
+  /*ボタンを最前面に*/
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  header .openbtn1 {
+    display: block;
+  }
+}
+
+header .openbtn1 span {
+  display: inline-block;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  position: absolute;
+  left: 14px;
+  height: 3px;
+  border-radius: 2px;
+  background-color: black;
+  width: 45%;
+}
+
+header .openbtn1 span:nth-of-type(1) {
+  top: 15px;
+}
+
+header .openbtn1 span:nth-of-type(2) {
+  top: 23px;
+}
+
+header .openbtn1 span:nth-of-type(3) {
+  top: 31px;
+}
+
+header .openbtn1.active span:nth-of-type(1) {
+  top: 18px;
+  left: 18px;
+  -webkit-transform: translateY(6px) rotate(-45deg);
+          transform: translateY(6px) rotate(-45deg);
+  width: 30%;
+}
+
+header .openbtn1.active span:nth-of-type(2) {
+  opacity: 0;
+}
+
+header .openbtn1.active span:nth-of-type(3) {
+  top: 30px;
+  left: 18px;
+  -webkit-transform: translateY(-6px) rotate(45deg);
+          transform: translateY(-6px) rotate(45deg);
+  width: 30%;
+}
+
+@media screen and (max-width: 767px) {
+  header {
+    height: auto;
+  }
+}
+
+header .headerFlex {
+  margin-right: 5%;
+}
+
+header .headerFlex a {
+  text-decoration: none;
+  margin: 0 10px;
+  color: black;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 767px) {
+  header .headerFlex a {
+    display: none;
+  }
+}
+
+.keyVisual {
+  margin: 0 auto;
+  padding-bottom: 10%;
+}
+
+.keyVisual div {
+  width: 1152px;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .keyVisual div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: static;
+    width: 100%;
+  }
+}
+
+.keyVisual div .kv-Logo {
+  position: absolute;
+  left: 0;
+  top: -25%;
+  z-index: 10;
+}
+
+@media screen and (max-width: 767px) {
+  .keyVisual div .kv-Logo {
+    position: static;
+    margin: 6% 0;
+    width: 50%;
+  }
+}
+
+.keyVisual div .kv-main {
+  max-width: 100%;
+}
+
+.keyVisual div .kv-text {
+  position: absolute;
+  right: 0%;
+  bottom: -9%;
+  z-index: 10;
+}
+
+@media screen and (max-width: 767px) {
+  .keyVisual div .kv-text {
+    width: 60%;
+    top: 10%;
+    left: 5%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .keyVisual div .picPosition {
+    position: relative;
+  }
+}
+
+.keyVisual div p {
+  letter-spacing: 10px;
+  position: absolute;
+  left: 0;
+  bottom: -12%;
+}
+
+@media screen and (max-width: 767px) {
+  .keyVisual div p {
+    position: static;
+    padding: 0 12%;
+  }
+}
 /*# sourceMappingURL=style.css.map */

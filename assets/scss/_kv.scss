@@ -1,0 +1,66 @@
+// キーヴィジュアル
+.keyVisual{
+    margin: 0 auto;
+    padding-bottom: 10%;
+    @include sp-screen{
+       
+    }
+    div{
+        width: 1152px;
+        position: relative;
+        margin: 0 auto;
+        text-align: center;
+        @include sp-screen{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: static; //ポジション解除
+            width: 100%;
+        }
+        
+        .kv-Logo{
+            position: absolute;
+            left: 0;
+            top: -25%;
+            z-index: 10;
+            @include sp-screen{
+                 position: static;//ポジション解除
+                margin: 6% 0;
+                width: 50%;
+            }
+         }
+
+        .kv-main{
+            max-width: 100%;
+        }
+
+        .kv-text{
+            position: absolute;
+            right: 0%;
+            bottom: -9%;
+            z-index: 10;    
+            @include sp-screen{
+                width: 60%;
+                top: 10%;
+                left: 5%;
+            }
+        }
+
+        .picPosition{
+            @include sp-screen{
+                position: relative;
+            }
+        }
+
+        p{
+            letter-spacing: 10px;
+            position: absolute;
+            left: 0;
+            bottom: -12%;
+            @include sp-screen{
+                 position: static;//ポジション解除
+                 padding: 0 12%;
+            }
+        }
+    }
+}
