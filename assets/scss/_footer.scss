@@ -7,4 +7,7 @@ footer{
     height: 60px;
     font-size: 15px;
     margin-top: 50px;
+    @include sp-screen{
+        margin-top: 10px;
+    }
 }

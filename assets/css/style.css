@@ -45,7 +45,8 @@
 @media screen and (max-width: 767px) {
   .article_contents div {
     width: 70%;
-    height: 550px;
+    height: 400px;
+    margin: 10px;
   }
 }
 
@@ -111,6 +112,12 @@ footer {
   height: 60px;
   font-size: 15px;
   margin-top: 50px;
+}
+
+@media screen and (max-width: 767px) {
+  footer {
+    margin-top: 10px;
+  }
 }
 
 body {
