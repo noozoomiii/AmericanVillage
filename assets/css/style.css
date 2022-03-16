@@ -195,6 +195,7 @@ header #g-nav.panelactive ul {
 header #g-nav li {
   list-style: none;
   text-align: center;
+  line-height: 3rem;
 }
 
 header #g-nav li a {
@@ -202,7 +203,6 @@ header #g-nav li a {
   text-decoration: none;
   padding: 10px;
   display: block;
-  text-transform: uppercase;
   letter-spacing: 0.1em;
   font-weight: bold;
 }

@@ -76,6 +76,7 @@ z-index:999;
 #g-nav li{
 list-style: none;
     text-align: center; 
+    line-height: 3rem;
 }
 
 #g-nav li a{
@@ -83,7 +84,7 @@ color: #333;
 text-decoration: none;
 padding:10px;
 display: block;
-text-transform: uppercase;
+
 letter-spacing: 0.1em;
 font-weight: bold;
 }
