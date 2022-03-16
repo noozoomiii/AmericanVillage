@@ -209,9 +209,12 @@ header #g-nav li a {
   text-decoration: none;
   padding: 10px;
   display: block;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
   font-weight: bold;
+}
+
+header #g-nav-list {
+  text-align: center;
+  margin-top: 20px;
 }
 
 header .openbtn1 {
@@ -297,6 +300,13 @@ header .headerFlex a {
   header .headerFlex a {
     display: none;
   }
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 2.5em;
 }
 
 .keyVisual {

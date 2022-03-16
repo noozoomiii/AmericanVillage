@@ -83,9 +83,14 @@ color: #333;
 text-decoration: none;
 padding:10px;
 display: block;
-text-transform: uppercase;
-letter-spacing: 0.1em;
+// text-transform: uppercase;
+// letter-spacing: 0.1em;
 font-weight: bold;
+}
+
+#g-nav-list{
+    text-align: center;
+    margin-top: 20px;
 }
 
 
@@ -229,3 +234,8 @@ opacity: 0;
 //         }
 //     }
 // }
+
+.menu{
+    display: flex;
+    line-height: 2.5em;
+}
