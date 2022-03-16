@@ -45,7 +45,8 @@
 @media screen and (max-width: 767px) {
   .article_contents div {
     width: 70%;
-    height: 550px;
+    height: 400px;
+    margin: 10px;
   }
 }
 
@@ -111,6 +112,12 @@ footer {
   height: 60px;
   font-size: 15px;
   margin-top: 50px;
+}
+
+@media screen and (max-width: 767px) {
+  footer {
+    margin-top: 10px;
+  }
 }
 
 body {
@@ -207,6 +214,11 @@ header #g-nav li a {
   font-weight: bold;
 }
 
+header #g-nav-list {
+  text-align: center;
+  margin-top: 20px;
+}
+
 header .openbtn1 {
   position: fixed;
   z-index: 9999;
@@ -290,6 +302,13 @@ header .headerFlex a {
   header .headerFlex a {
     display: none;
   }
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 2.5em;
 }
 
 .keyVisual {
