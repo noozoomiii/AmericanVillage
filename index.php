@@ -5,9 +5,13 @@
         <div>
             <img src="<?php echo get_template_directory_uri();?>/assets/img/logo.png" alt="" class="kv-Logo">
             <div class="picPosition">
+                <!-- イメージ　フェードイン　フェードアウト -->
                 <picture>
-                    <source srcset="<?php echo get_template_directory_uri();?>/assets/img/visual_1_sp.png" media="(max-width: 767px)">
-                    <img src="<?php echo get_template_directory_uri();?>/assets/img/visual_1_pc.png" alt="" class="kv-main">
+                <?php
+echo do_shortcode('[smartslider3 slider="2"]');
+?>
+                    <!-- <source srcset="<?php echo get_template_directory_uri();?>/assets/img/visual_1_sp.png" media="(max-width: 767px)">
+                    <img src="<?php echo get_template_directory_uri();?>/assets/img/visual_1_pc.png" alt="" class="kv-main"> -->
                 </picture>
                 <picture>
                     <source srcset="<?php echo get_template_directory_uri();?>/assets/img/visual_text_sp.png" media="(max-width: 767px)">

@@ -5,7 +5,7 @@
     @include sp-screen{
        
     }
-    div{
+    > div{
         width: 1152px;
         position: relative;
         margin: 0 auto;
@@ -36,8 +36,10 @@
 
         .kv-text{
             position: absolute;
-            right: 0%;
-            bottom: -9%;
+            right: 0.2rem;
+            bottom: -3rem;
+            // right: 0%;
+            // bottom: -11%;
             z-index: 10;    
             @include sp-screen{
                 width: 60%;
@@ -47,8 +49,11 @@
         }
 
         .picPosition{
+            width: 1024px;
+            margin: 0 auto;
             @include sp-screen{
                 position: relative;
+                width: 100%;
             }
         }
 
@@ -60,6 +65,7 @@
             @include sp-screen{
                  position: static;//ポジション解除
                  padding: 0 12%;
+                 margin-top: 5%;
             }
         }
     }
