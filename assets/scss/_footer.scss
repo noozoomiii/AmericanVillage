@@ -10,4 +10,7 @@ footer{
     @include sp-screen{
         margin-top: 10px;
     }
+    @include tb-screen{
+        width: 1152px;
+    }
 }

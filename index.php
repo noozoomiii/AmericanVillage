@@ -25,7 +25,8 @@ echo do_shortcode('[smartslider3 slider="2"]');
 
     <section class="article">
         <h2>Latest Articles</h2>
-        <div class="article_contents">
+        <?php global $wp_query; $count = $wp_query->found_posts;?>
+        <div class="article_contents load" data-count="<?php echo $count; ?>">
         <?php query_posts('posts_per_page=6'); ?>
 
             <?php

@@ -6,6 +6,12 @@
   margin: 50px 0;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1151px) {
+  .article h2 {
+    width: 1152px;
+  }
+}
+
 .article_contents {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -101,6 +107,12 @@
   text-align: center;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1151px) {
+  .btn {
+    width: 1152px;
+  }
+}
+
 .more_btn {
   height: 50px;
   width: 100px;
@@ -139,8 +151,18 @@ footer {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1151px) {
+  footer {
+    width: 1152px;
+  }
+}
+
 body {
   margin: 0;
+}
+
+* {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
 }
 
 img {

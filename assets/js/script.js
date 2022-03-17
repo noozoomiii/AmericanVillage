@@ -44,9 +44,12 @@ $(function(){
                 load.append(data); 
                 //表示件数を増やす
                 now_post_num = now_post_num + get_post_num; 
+
+                console.log(now_post_num);
+                console.log(all_count);
                 //まだ全件表示されていない場合、ボタンを再度表示
                 if(all_count > now_post_num) { 
-                    load.after('<button class="more_btn">もっと見る</button>');
+                    $('.btn').append('<button class="more_btn">もっと見る</button>');
                 }
             })
             .fail(function(){
