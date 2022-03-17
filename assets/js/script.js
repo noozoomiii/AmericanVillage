@@ -11,7 +11,7 @@ $(function(){
 
     
         let now_post_num = 6; // 現在表示されている件数
-        let get_post_num = 3;  // もっと読み込むボタンで取得する件数
+        let get_post_num = 6;  // もっと読み込むボタンで取得する件数
     
         //archive側で設定したdata属性の値を取得
         let load = $(".article_contents");

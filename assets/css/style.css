@@ -335,7 +335,7 @@ header .headerFlex a {
   padding-bottom: 10%;
 }
 
-.keyVisual div {
+.keyVisual > div {
   width: 1152px;
   position: relative;
   margin: 0 auto;
@@ -343,7 +343,7 @@ header .headerFlex a {
 }
 
 @media screen and (max-width: 767px) {
-  .keyVisual div {
+  .keyVisual > div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -359,7 +359,7 @@ header .headerFlex a {
   }
 }
 
-.keyVisual div .kv-Logo {
+.keyVisual > div .kv-Logo {
   position: absolute;
   left: 0;
   top: -25%;
@@ -367,39 +367,45 @@ header .headerFlex a {
 }
 
 @media screen and (max-width: 767px) {
-  .keyVisual div .kv-Logo {
+  .keyVisual > div .kv-Logo {
     position: static;
     margin: 6% 0;
     width: 50%;
   }
 }
 
-.keyVisual div .kv-main {
+.keyVisual > div .kv-main {
   max-width: 100%;
 }
 
-.keyVisual div .kv-text {
+.keyVisual > div .kv-text {
   position: absolute;
-  right: 0%;
-  bottom: -9%;
+  right: 0.2rem;
+  bottom: -3rem;
   z-index: 10;
 }
 
 @media screen and (max-width: 767px) {
-  .keyVisual div .kv-text {
+  .keyVisual > div .kv-text {
     width: 60%;
     top: 10%;
     left: 5%;
   }
 }
 
+.keyVisual > div .picPosition {
+  width: 1024px;
+  margin: 0 auto;
+}
+
 @media screen and (max-width: 767px) {
-  .keyVisual div .picPosition {
+  .keyVisual > div .picPosition {
     position: relative;
+    width: 100%;
   }
 }
 
-.keyVisual div p {
+.keyVisual > div p {
   letter-spacing: 10px;
   position: absolute;
   left: 0;
@@ -407,9 +413,10 @@ header .headerFlex a {
 }
 
 @media screen and (max-width: 767px) {
-  .keyVisual div p {
+  .keyVisual > div p {
     position: static;
     padding: 0 12%;
+    margin-top: 5%;
   }
 }
 /*# sourceMappingURL=style.css.map */
