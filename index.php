@@ -22,12 +22,14 @@
     <section class="article">
         <h2>Latest Articles</h2>
         <div class="article_contents">
+        <?php query_posts('posts_per_page=6'); ?>
+
             <?php
             if (have_posts()):
                 while (have_posts()):
             the_post();
             ?>
-            <div>
+            <div class="article_box">
                 <p class="article_img"><?php the_post_thumbnail();?></p>
                 <p class="article_date"><?php echo get_the_date(); ?></p>
                 <p class="article_title"><?php the_title(); ?></p>
@@ -37,14 +39,49 @@
                 
             </div>
 
-            <?php endwhile;
-                else : ?>
+            <?php endwhile;?>
+
+    <!-- この部分がajaxで追加読み込みする箇所 -->
+    <!-- javascript側に渡したい値は、data属性を使って指定 -->
+    <!-- <div class="load" data-count="<?php //echo $count; ?>" data-post-type="post" >
+    </div> -->
+
+            <!-- カスタム投稿全件数取得 -->
+        <?php global $wp_query; $count = $wp_query->found_posts;?>
+
+
+
+
+    <!-- END if (have_posts()) -->
+                <?php else : ?>
             <section>
                 <p>表示する記事がありません</p>
             </section>
-            <?php endif; ?>
+
+            <?php endif; ?> 
+            
+            <?php wp_reset_query(); ?>
+            
+             
+     
         </div>
+
+            <!-- 初期表示件数が全件数より少ない場合、もっと読み込むボタンを表示 -->
+    <?php if($count > 6): ?>
+        <?php wp_reset_query(); ?>
+        <div class="btn">
+           <button class="more_btn">もっと見る</button>
+        </div>
+    
+    <?php endif; ?>
+
+        <!-- <div class="more">
+          <button id="more_disp"><a href="#">もっと見る</a></button>
+        </div> -->
+
+        
     </section>
 
-<?php get_footer(); ?>    
 
+  
+<?php get_footer(); ?>

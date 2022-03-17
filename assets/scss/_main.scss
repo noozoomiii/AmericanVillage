@@ -13,6 +13,9 @@
     }
 }
 
+
+
+
 .article_contents{
     display: flex;
     justify-content: space-between;
@@ -73,6 +76,8 @@
 
 }
 
+
+
 .article_img img{
     width: 100%;
 }
@@ -85,4 +90,24 @@
 .article_title{
     margin-top: 20px;
     margin-left: 10px;
+}
+
+
+.btn{
+    text-align: center;
+}
+
+.more_btn{
+    height: 50px;
+    width: 100px;
+    background-color: rgb(115, 115, 172);
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+.more_btn:hover{
+    opacity: 0.8;
 }

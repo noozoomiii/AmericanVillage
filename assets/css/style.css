@@ -97,6 +97,25 @@
   margin-left: 10px;
 }
 
+.btn {
+  text-align: center;
+}
+
+.more_btn {
+  height: 50px;
+  width: 100px;
+  background-color: #7373ac;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.more_btn:hover {
+  opacity: 0.8;
+}
+
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
