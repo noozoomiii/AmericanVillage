@@ -16,7 +16,6 @@ source{
 
 //ブレイクポイント変数
 $sp: 767px;
-//　
 @mixin sp-screen {
     @media screen and (max-width: $sp) {
         @content;
@@ -159,8 +158,8 @@ opacity: 0;
     transform: translateY(-6px) rotate(45deg);
     width: 30%;
 }
-
 // ハンバーガーメニュー終わり
+
     @include sp-screen{
         height: auto;
         }

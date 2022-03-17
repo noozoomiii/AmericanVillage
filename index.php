@@ -18,7 +18,7 @@ echo do_shortcode('[smartslider3 slider="2"]');
                     <img src="<?php echo get_template_directory_uri();?>/assets/img/visual_text_pc.png" alt="" class="kv-text">
                 </picture>
             </div>
-            <p>進化し続ける「街」アメリカンビレッジマガジン</p>
+            <p class="kvfont">進化し続ける「街」アメリカンビレッジマガジン</p>
         </div>
     </section>
     <!-- キーヴィジュアル -->
