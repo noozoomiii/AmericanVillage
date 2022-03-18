@@ -231,7 +231,7 @@ header #g-nav ul {
   /*ナビゲーション天地中央揃え*/
   position: absolute;
   z-index: 999;
-  top: 50%;
+  top: 85vw;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -250,7 +250,7 @@ header #g-nav li {
 header #g-nav li a {
   color: #333;
   text-decoration: none;
-  padding: 10px;
+  padding: 2vw;
   display: block;
   letter-spacing: 0.1em;
   font-weight: bold;
@@ -321,6 +321,12 @@ header .openbtn1.active span:nth-of-type(3) {
   -webkit-transform: translateY(-6px) rotate(45deg);
           transform: translateY(-6px) rotate(45deg);
   width: 30%;
+}
+
+@media screen and (max-width: 767px) {
+  header .imgsize {
+    width: 45vw;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -429,7 +435,6 @@ header .headerFlex a {
 }
 
 .keyVisual > div .kvfont {
-  letter-spacing: 10px;
   position: absolute;
   left: 0;
   bottom: -12%;

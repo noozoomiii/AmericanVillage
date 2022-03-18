@@ -16,7 +16,7 @@
          <div class="openbtn1"><span></span><span></span><span></span></div>
          <nav id="g-nav">
              <div id="g-nav-list">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/logo.png" alt="">
+                <img class="imgsize" src="<?php echo get_template_directory_uri();?>/assets/img/logo.png" alt="">
                 <?php 
                     wp_nav_menu( array( 
                     'theme_location' => 'main-menu' 
