@@ -67,7 +67,7 @@ z-index:999;
     /*ナビゲーション天地中央揃え*/
     position: absolute;
     z-index: 999;
-    top:50%;
+    top:85vw;
     left:50%;
     transform: translate(-50%,-50%);
 }
@@ -87,7 +87,7 @@ list-style: none;
 #g-nav li a{
 color: #333;
 text-decoration: none;
-padding:10px;
+padding:2vw;
 display: block;
 
 letter-spacing: 0.1em;
@@ -157,6 +157,12 @@ opacity: 0;
     left: 18px;
     transform: translateY(-6px) rotate(45deg);
     width: 30%;
+}
+
+.imgsize{
+    @include sp-screen{
+        width: 45vw;
+    }
 }
 // ハンバーガーメニュー終わり
 
