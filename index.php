@@ -42,15 +42,12 @@ echo do_shortcode('[smartslider3 slider="2"]');
             the_post();
             ?>
             
-            <div class="article_box">
-                <a href="<?php the_permalink();?>">
+            <a href="<?php the_permalink();?>" class="article_box">   
                 <p class="article_img"><?php the_post_thumbnail();?></p>
                 <p class="article_date"><?php echo get_the_date(); ?></p>
                 <p class="article_title"><?php the_title(); ?></p>
-                
-                    <p class="readmore">READ MORE</p>         
-                </a>   
-            </div>
+                <p class="readmore">READ MORE</p>         
+            </a>
 
             <?php endwhile;?>
                 <?php else : ?>

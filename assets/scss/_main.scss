@@ -33,7 +33,7 @@
         width: 100%;
     }
 
-    div{
+    .article_box{
         width: 28%;
         height: 500px;
         margin: 0 15px 70px 15px;
@@ -43,12 +43,12 @@
         position: relative;
         @include sp-screen{
             width: 70%;
-            height: 400px;
+            height: 500px;
             margin: 10px;
         }
     }
 
-    div:hover {
+    .article_box:hover {
         box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
         transform: translateY(-0.1875em);
     }
@@ -60,11 +60,12 @@
         // bottom: 10%;
         // right: 5%;
         text-decoration: none;
+        display: block;
     }
         
     a::after {
         position: absolute;
-        bottom: 8%;
+        bottom: 6%;
         right: 5%;
         content: '';
         width: 10%;
@@ -82,7 +83,7 @@
 .readmore{
     position: absolute;
     right: 5%;
-    bottom: 10%;
+    bottom: 8%;
 
 }
 

@@ -58,12 +58,12 @@ function my_ajax(){
     // echo $template;
     
 
-    echo '<div class="article_box">';
+    echo '<a href="'.get_the_permalink().'" class="article_box">';
     echo '<p class="article_img"><img src="'.get_the_post_thumbnail_url().'"></p>';
     echo '<p class="article_date">'.get_the_date().'</p>';
     echo '<p class="article_title">'.get_the_title().'</p>';
-	echo '<a href="'.get_the_permalink().'">'.'<p class="readmore">READ MORE</p>'.'</a>';
-	echo '</div>';
+	echo '<p class="readmore">READ MORE</p>'.'</a>';
+	echo '</a>';
                 
 
     // echo '<p>' .the_post_thumbnail().'</p>';
